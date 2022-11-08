@@ -523,11 +523,6 @@ containter {
   flex-wrap: wrap;
   gap: 30px;
 }
-.project {
-  display: flex;
-  flex-direction: row;
-}
-
 .picture-margin {
   display: block;
 }
