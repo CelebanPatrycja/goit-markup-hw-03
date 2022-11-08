@@ -518,17 +518,28 @@ containter {
 }
 
 .imagesproject {
-  background-color: var(--fourth-color);
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
   flex-wrap: wrap;
+  align-content: center;
   gap: 30px;
-}
-.picture-margin {
-  display: block;
-}
+  margin: 0 auto;
+  padding-top: 34px;
 
-.picture-margin:last-child {
-  margin-right: 0;
+  cursor: pointer;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+.project {
+  background-color: var(--fourth-color);
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 1px #eeeeee solid;
 }
 
 .section {
@@ -554,9 +565,4 @@ containter {
   font-size: 16px;
   line-height: 30px;
   color: var(--third-color);
-}
-
-.pictures-border {
-  width: 370px;
-  border: 1px solid #eeeeee;
 }
