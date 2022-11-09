@@ -15,7 +15,6 @@
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -75,7 +74,6 @@ ul {
 
 .agency {
   color: var(--fifth-color);
-  margin-left: 94px;
   margin-right: 46px;
 }
 
@@ -92,6 +90,10 @@ ul {
   text-align: center;
   gap: 50px;
 }
+.mailandtel {
+  margin-top: 32px;
+}
+
 .mail-adress {
   margin: 0;
   padding: 0;
@@ -129,7 +131,6 @@ ul {
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .job-class {
@@ -180,7 +181,7 @@ ul {
   font-size: 14px;
   line-height: 1.17;
   display: flex;
-  align-items: center;
+  margin-bottom: 126px;
 }
 
 .navmenu > .menu {
@@ -195,9 +196,7 @@ ul {
 
 .studioname {
   padding-top: 24px;
-  display: flex;
-  color: var(--fifth-color);
-  margin: 0 auto;
+  padding-bottom: 25px;
 }
 
 .studioname > .dark-logo,
@@ -266,6 +265,9 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+
+  margin-top: 32px;
+  margin-left: 93px;
 }
 
 .portoflio {
@@ -318,17 +320,11 @@ address {
   width: 100%;
   width: 1200px;
   margin: 0 auto;
-  text-align: left;
 }
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-.header-style {
-  align-items: center;
-  margin-right: 93px;
-  margin-bottom: 32px;
+  align-items: baseline;
 }
 
 .lorem-margin:last-child {
@@ -337,15 +333,23 @@ address {
 .align-member {
   text-align: center;
 }
+.team-class {
+  background-color: #f5f4fa;
+}
 .team-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   gap: 30px;
 }
 
-.member-border {
+.member {
+  background-color: var(--fourth-color);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
+}
+
+.our-team {
+  background: var(--sixth-color);
 }
 
 .list-pictures {
@@ -360,8 +364,7 @@ address {
 
 .dark-background {
   background: var(--seventh-color);
-  padding: 60px 0;
-  padding-left: 0;
+  padding: 60px 0px;
 }
 
 containter {
@@ -387,6 +390,9 @@ containter {
 }
 .footer-logo {
   color: var(--secondary-color);
+}
+.padding-logo-fotter {
+  padding-bottom: 20px;
 }
 
 .grey-class {
@@ -421,24 +427,19 @@ containter {
 }
 /* Portfolio-css */
 
-.topline-portfolio {
-  margin-top: 32px;
-}
-
 .portfolio-top {
   background-color: #ffffff;
 }
-.menu-portfolio {
+/* .menu-portfolio {
   margin-top: 32px;
+  flex-direction: row;
   display: inline;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-}
+} */
 
 .agency-two {
   color: var(--fifth-color);
-  margin-left: 94px;
   margin-right: 46px;
 }
 
@@ -468,17 +469,14 @@ containter {
        */
 .buttons-portfolio {
   justify-content: center;
-  padding-top: 94px;
   padding-bottom: 50px;
   display: flex;
-  flex-direction: row;
   gap: 8px;
   border-radius: 4%;
-  border-style: none;
 }
 
 .button-all {
-  background-color: var(--sixth-color);
+  background-color: var(--eighth-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -493,7 +491,7 @@ containter {
 }
 
 .button-other {
-  background-color: var(--sixth-color);
+  background-color: var(--eighth-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -519,21 +517,8 @@ containter {
 
 .imagesproject {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  align-content: center;
   gap: 30px;
-  margin: 0 auto;
-  padding-top: 34px;
-
-  cursor: pointer;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-  width: 100%;
-  max-width: 1200px;
+  flex-wrap: wrap;
 }
 .project {
   background-color: var(--fourth-color);
@@ -543,7 +528,8 @@ containter {
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .specialization {
