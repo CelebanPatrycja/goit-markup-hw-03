@@ -10,6 +10,11 @@
   --nineth-color: #000000;
   --tenth-color: black;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
 .team {
   font-size: 36px;
   font-weight: 700;
@@ -35,7 +40,6 @@ ul {
 .section-gray {
   background: var(--seventh-color);
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
 }
 
@@ -46,20 +50,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
-}
-.button-main {
-  background-color: var(--main-color);
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--secondary-color);
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  border: var(--seventh-color);
-  cursor: pointer;
-  font-family: inherit;
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
 }
 
 .agency {
@@ -77,20 +67,22 @@ ul {
 
 .mail-telephone {
   display: flex;
-  text-align: center;
-  gap: 50px;
+  gap: 30px;
+  padding-top: 32px;
 }
 .mailandtel {
-  margin-top: 32px;
+  margin-left: 50px;
 }
 
 .mail-adress {
-  margin: 0;
-  padding: 0;
-  color: var(--third-color);
+  color: var(--fifth-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .telephone {
   color: var(--third-color);
+  font-size: 14px;
 }
 
 .lorem {
@@ -178,8 +170,9 @@ ul {
   font-size: 14px;
   line-height: 1.17;
   display: flex;
-  margin-bottom: 126px;
+  align-items: center;
 }
+
 .navmenu-index > .menu {
   color: var(--tenth-color);
 }
@@ -229,6 +222,21 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-top: 24px;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.studioname-footer {
+  color: var(--main-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-top: 24px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .black {
@@ -277,12 +285,24 @@ ul {
   color: var(--main-color);
 }
 
-.buttons-main {
-  font-weight: 500;
+.button-main {
+  background-color: var(--main-color);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  padding: 10px 42px 10px 41px;
+  border-radius: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
   font-size: 16px;
-  line-height: 1.62;
-  border-radius: 4%;
-  border-style: none;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  display: block;
+  text-decoration: none;
 }
 
 .cityadress {
@@ -403,18 +423,6 @@ containter {
   display: inline;
 }
 
-.picture-margin:last-child {
-  margin-right: 0;
-}
-
-.buttons-margin {
-  margin-right: 8px;
-  border-radius: 4%;
-  border-style: none;
-}
-.buttons-margin:last-child {
-  margin-right: 0;
-}
 .images {
   justify-content: space-between;
 }
@@ -423,13 +431,6 @@ containter {
 .portfolio-top {
   background-color: #ffffff;
 }
-/* .menu-portfolio {
-  margin-top: 32px;
-  flex-direction: row;
-  display: inline;
-  align-items: center;
-  text-align: center;
-} */
 
 .agency-two {
   color: var(--fifth-color);
@@ -454,18 +455,11 @@ containter {
   color: var(--third-color);
 }
 
-/* .buttons-portfolio:hover {
-        color: var(--secondary-color);
-        border-radius: 4%;
-        border-style: none;
-      }
-       */
 .buttons-portfolio {
   justify-content: center;
-  padding-bottom: 50px;
   display: flex;
   gap: 8px;
-  border-radius: 4%;
+  padding-bottom: 50px;
 }
 
 .button-all {
@@ -476,9 +470,10 @@ containter {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
+  padding: 6px 22px 6px 22px;
   letter-spacing: 0.03em;
   color: var(--fifth-color);
-  border-radius: 4%;
+  border-radius: 4px;
   border-style: none;
   cursor: pointer;
 }
@@ -490,10 +485,11 @@ containter {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  padding: 6px 22px 6px 22px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--fifth-color);
-  border-radius: 4%;
+  border-radius: 4px;
   border-style: none;
   cursor: pointer;
 }
@@ -512,9 +508,9 @@ containter {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 .project {
+  flex-basis: calc((100% - 60px) / 3);
   background-color: var(--fourth-color);
   box-sizing: border-box;
   text-decoration: none;

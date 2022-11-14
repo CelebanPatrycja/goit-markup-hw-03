@@ -4,61 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Studio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <section class="section">
      <body class="body-class">
       <header class="header-class">
-       <div class="container header-wrapper">
-          <a class="logo-item" href="./index.html">
-            <p class="studioname">
-              <span class="dark-logo">Web</span
-              ><span class="black">Studio</span>
-            </p>
-          </a>
-          <nav class="navmenu-index">
-          <ul class="menu topline">
-            <li class="list-menu">
-              <a class="agency elementblue" href="#">Agencja</a>
-            </li>
-            <li class="list-menu">
-              <a class="portfolio elementblue" href="portfolio.html"
-                >Portfolio</a
+        <div class="container header-wrapper">
+          <nav class="navmenu-portfolio">
+            <a class="logo-item" href="./index.html">
+              <p class="studioname">
+                <span class="dark-logo">Web</span
+                ><span class="black">Studio</span>
+              </p>
+            </a>
+            <nav class="navmenu-portfolio">
+            <ul class="menu topline">
+              <li class="list-menu">
+                <a class="agency elementblue" href="#">Agencja</a>
+              </li>
+              <li class="list-menu">
+                <a class="portfolio elementblue" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="list-menu">
+                <a class="contacts elementblue" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <!--<div class="list-box">-->
+          <ul class="mail-telephone">
+            <li class="mailandtel">
+              <a
+                class="mail-adress  elementblue"
+                href="mailto:info@example.com"
+                >info@example.com</a
               >
             </li>
-            <li class="list-menu">
-              <a class="contacts elementblue" href="#">Kontakt</a>
+            <li class="mailandtel">
+              <a class="telephone elementblue" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
             </li>
           </ul>
-        </nav>
-        <!--<div class="list-box">-->
-        <ul class="mail-telephone">
-          <li class="mailandtel">
-            <a
-              class="mail-adress mail elementblue"
-              href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li class="mailandtel">
-            <a class="telephone mail elementblue" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
+          <!-- </div>-->
+        </div>
+      </header>
     <main>
       <section class="section-gray">
         <div class="container">
@@ -193,7 +204,7 @@
         <footer class="dark-background"> 
             <div class="container">
               <div class="padding-logo-fotter">
-            <a class="footer-logo"  href="./index.html"> <span class="studioname">Web</span></a><span class="white">Studio</span></a>
+            <a class="footer-logo"  href="./index.html"> <span class="studioname-footer">Web</span></a><span class="white">Studio</span></a>
           </div>
           <div class="padding-adress-fotter">
             <address class="adress-item">
@@ -211,6 +222,5 @@
           </div>
           </footer>
       </div>
-      </section>
   </body>
 </html>
