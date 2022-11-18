@@ -331,9 +331,12 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .header-class {
   padding: 24 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .lorem-margin:last-child {
@@ -531,7 +534,6 @@ containter {
   font-size: 18px;
   line-height: 36px;
   color: var(--fifth-color);
-  margin-top: 20px;
   padding-left: 24px;
 }
 
