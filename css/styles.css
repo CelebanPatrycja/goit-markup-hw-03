@@ -50,6 +50,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
+  margin-bottom: 30px;
 }
 
 .agency {
@@ -68,14 +69,13 @@ ul {
 .mail-telephone {
   display: flex;
   gap: 30px;
-  padding-top: 32px;
 }
 .mailandtel {
   margin-left: 50px;
 }
 
 .mail-adress {
-  color: var(--fifth-color);
+  color: var(--third-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -94,7 +94,6 @@ ul {
 
 .loremparagraph {
   margin-top: 10px;
-  width: 270px;
 }
 
 .lorem-h3 {
@@ -163,7 +162,7 @@ ul {
   font-size: 14px;
   line-height: 1.17;
   display: flex;
-  margin-bottom: 25px;
+  align-items: center;
 }
 .navmenu-portfolio {
   text-decoration: none;
@@ -222,10 +221,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  margin-top: 24px;
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .studioname-footer {
@@ -266,9 +262,6 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
-  margin-top: 32px;
-  margin-left: 93px;
 }
 
 .portoflio {
@@ -337,7 +330,10 @@ address {
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+}
+.header-class {
+  padding: 24 0;
 }
 
 .lorem-margin:last-child {
@@ -509,12 +505,17 @@ containter {
   gap: 30px;
   flex-wrap: wrap;
 }
+
+.border-solid {
+  border: 1px solid #eee;
+  border-top: none;
+}
+
 .project {
   flex-basis: calc((100% - 60px) / 3);
   background-color: var(--fourth-color);
   box-sizing: border-box;
   text-decoration: none;
-  border: 1px #eeeeee solid;
 }
 
 .section {
